@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações da Conta - Sistema Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            
+            <nav class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cadprodutos.html">
+                            <i class="fas fa-box"></i>
+                            <span>Cadastrar Produtos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardapio.html">
+                            <i class="fas fa-book-open"></i>
+                            <span>Cardápio Online</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vendas-dia.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Vendas do Dia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="active">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="dashboard.html" class="btn-voltar-simples">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Voltar</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <h1>Configurações da Conta</h1>
+                    <p>Gerencie suas preferências e informações pessoais</p>
+                </div>
+                <div class="header-right">
+                    <div class="date-time">
+                        <span id="currentDate"></span>
+                        <span id="currentTime"></span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <div class="settings-container">
+                    <div class="settings-header">
+                        <div>
+                            <h1>Minha Conta</h1>
+                            <p>Atualize suas informações pessoais, preferências e configurações de privacidade</p>
+                        </div>
+                        <button class="btn btn-primary" id="saveAllBtn">
+                            <i class="fas fa-save"></i> Salvar Alterações
+                        </button>
+                    </div>
+
+                    <div class="settings-grid">
+                        <!-- Informações Pessoais -->
+                        <div class="settings-card">
+                            <div class="card-header">
+                                <i class="fas fa-user"></i>
+                                <h3>Informações Pessoais</h3>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" class="form-control" value="João da Silva">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" class="form-control" value="joao.silva@email.com">
+                                <p class="form-hint">Usado para login e notificações</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" value="(11) 98765-4321">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dataNascimento">Data de Nascimento</label>
+                                <input type="date" id="dataNascimento" class="form-control" value="1985-06-15">
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn btn-primary" id="updatePersonalInfo">
+                                    <i class="fas fa-sync-alt"></i> Atualizar
+                                </button>
+                                <button class="btn btn-secondary" id="cancelPersonalInfo">
+                                    <i class="fas fa-times"></i> Cancelar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="settings-card">
+                            <div class="card-header">
+                                <i class="fas fa-user"></i>
+                                <h3>Informações Pessoais</h3>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" class="form-control" value="João da Silva">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" class="form-control" value="joao.silva@email.com">
+                                <p class="form-hint">Usado para login e notificações</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" value="(11) 98765-4321">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dataNascimento">Data de Nascimento</label>
+                                <input type="date" id="dataNascimento" class="form-control" value="1985-06-15">
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn btn-primary" id="updatePersonalInfo">
+                                    <i class="fas fa-sync-alt"></i> Atualizar
+                                </button>
+                                <button class="btn btn-secondary" id="cancelPersonalInfo">
+                                    <i class="fas fa-times"></i> Cancelar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="settings-card">
+                            <div class="card-header">
+                                <i class="fas fa-user"></i>
+                                <h3>Informações Pessoais</h3>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" class="form-control" value="João da Silva">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" class="form-control" value="joao.silva@email.com">
+                                <p class="form-hint">Usado para login e notificações</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" value="(11) 98765-4321">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dataNascimento">Data de Nascimento</label>
+                                <input type="date" id="dataNascimento" class="form-control" value="1985-06-15">
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn btn-primary" id="updatePersonalInfo">
+                                    <i class="fas fa-sync-alt"></i> Atualizar
+                                </button>
+                                <button class="btn btn-secondary" id="cancelPersonalInfo">
+                                    <i class="fas fa-times"></i> Cancelar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
